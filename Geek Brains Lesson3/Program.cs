@@ -14,6 +14,7 @@ namespace Geek_Brains_Lesson3
             Console.WriteLine(PolinomNum(number));
         }
         public static string PolinomNum(int number)
+
         {
             if (number.ToString().Length != 5) return "Число не пятизначное";
             char[] check = number.ToString().ToCharArray();
