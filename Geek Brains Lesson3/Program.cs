@@ -13,6 +13,7 @@ namespace Geek_Brains_Lesson3
             int number = int.Parse(Console.ReadLine());
             Console.WriteLine(PolinomNum(number));
             GetNumber();
+            CubePow(3);
         }
         public static string PolinomNum(int number)
 
@@ -50,8 +51,13 @@ namespace Geek_Brains_Lesson3
             Console.WriteLine(result);          
            
         }
-        
-
-
+        public static void CubePow(int input)
+        {
+            for (double i = 1; i <= input; i++)
+            {
+                Console.Write($"{Math.Pow(i, 3)}, ");
+            }            
+            Console.WriteLine("");
+        }        
     }
 }
